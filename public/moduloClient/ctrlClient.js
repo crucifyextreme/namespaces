@@ -6,22 +6,22 @@ appClient
 
                 $scope.loadClientes = function() {
 
-                   /* modelClient.consulta_dados()
+                    modelClient.consulta_dados()
                         .success(function(data) {
                             console.log(data);
                             //$scope.clientes = data;
                         })
                         .error(function() {
                            /////
-                        });*/
-                    $http.get('/buscaClientes', {
-                        /*headers: {
-                            'Content-type': 'application/json; charset=utf-8'
-                        }*/
-                    }).success(function (events) {
-                            console.log(events);
-                          //  $scope.events = events;
                         });
+                    /*$http.get('buscaClientes', {
+                        headers: {
+                            'Content-type': 'application/json; charset=utf-8'
+                        }
+                    }).success(function (data) {
+                            console.log(data);
+                          //  $scope.events = events;
+                        });*/
 
                 },
                 /* Open modal details clients */

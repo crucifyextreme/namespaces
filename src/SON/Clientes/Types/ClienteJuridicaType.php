@@ -1,8 +1,8 @@
 <?php
 
-namespace OOCodeeducation\Clientes\Types;
+namespace SON\Clientes\Types;
 
-use OOCodeeducation\Clientes\ClienteGenerica;
+use SON\Clientes\ClienteGenerica;
 
 class ClienteJuridica extends ClienteGenerica {
 

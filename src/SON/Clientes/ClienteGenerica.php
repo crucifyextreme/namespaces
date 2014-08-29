@@ -1,9 +1,9 @@
 <?php
 
-namespace OOCodeeducation\Clientes;
+namespace SON\Clientes;
 
 
-use OOCodeeducation\Clientes\interfaces\ClienteInterface;
+use SON\Clientes\Interfaces\ClienteInterface;
 
 class ClienteGenerica implements ClienteInterface
 {

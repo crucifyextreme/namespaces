@@ -1,6 +1,6 @@
 <?php
 
-namespace OOCodeeducation\Clientes\interfaces;
+namespace SON\Clientes\Interfaces;
 
 
 interface ClienteInterface
