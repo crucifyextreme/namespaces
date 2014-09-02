@@ -33,7 +33,7 @@
         <tr class="odd gradeX" ng-repeat="cliente in clientes | orderBy:predicate:reverse | filter:busca">
             <td> {{cliente.id}}</td>
             <td> {{cliente.nome}}</td>
-            <td>{{cliente.cpf}}</td>
+            <td>{{cliente.documento}}</td>
             <td>{{cliente.tipo_cliente}}</td>
 
 
@@ -99,7 +99,7 @@
                             <div class="col-lg-4">
                                 <div class="form-group">
                                     <label style="font-size: 12px;">NR.Documento</label>
-                                    <p>{{cpf}}</p>
+                                    <p>{{documento}}</p>
                                 </div>
                             </div>
                         </div>

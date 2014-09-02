@@ -7,6 +7,4 @@ spl_autoload_register(function($class) {
     include($className);
 });
 
-//require_once __DIR__ . '/public/rotas.php';
-//require_once __DIR__.'/public/template.php';
 

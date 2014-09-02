@@ -4,7 +4,7 @@ namespace SON\Clientes\Types;
 
 use SON\Clientes\ClienteGenerica;
 
-class ClienteJuridica extends ClienteGenerica {
+class ClienteJuridicaType extends ClienteGenerica {
 
     private $cnpj;
 
