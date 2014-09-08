@@ -3,6 +3,7 @@ require __DIR__.'/../autoload.php';
 
 use SON\Clientes\Types\ClienteFisicaType;
 use SON\Clientes\Types\ClienteJuridicaType;
+use SON\Pdo\Configuracao;
 
 $dados_url  = parse_url("http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
 $rota_ = explode('/',$dados_url['path'],2);
@@ -11,7 +12,11 @@ $rota = str_replace('rotas.php','',$rota_[1]);
     /* Rota para listagem de clientes */
     if($rota == "/buscaClientes") {
 
-      /* Cliente pessoa fisica */
+        $config = new Configuracao();
+        $pdo    = $config->Conecta();
+
+
+      /* Cliente pessoa fisica
 
        $clienteFisica1 = new ClienteFisicaType();
 
@@ -43,7 +48,7 @@ $rota = str_replace('rotas.php','',$rota_[1]);
             ->setTipoCliente('Pessoa Fisica')
             ->setClassificacaoCliente(4);
 
-        /* Cliente pessoa juridica */
+        Cliente pessoa juridica
         $clienteJuridica1 = new ClienteJuridicaType();
 
         $clienteJuridica1->setId(3)
@@ -89,6 +94,6 @@ $rota = str_replace('rotas.php','',$rota_[1]);
 
 
 
-        echo json_encode($cliente);
+        echo json_encode($cliente);*/
 
     }

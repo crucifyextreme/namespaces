@@ -8,8 +8,8 @@ appClient
 
                     modelClient.consulta_dados()
                         .success(function(data) {
-                           // console.log(data);
-                            $scope.clientes = data;
+                           console.log(data);
+                            //$scope.clientes = data;
                         })
                         .error(function() {
                            /////
